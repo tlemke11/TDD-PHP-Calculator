@@ -6,6 +6,7 @@
  * Time: 10:06 AM
  */
 
+require_once "Calculator.php";
 
 
 class CalculatorTest extends PHPUnit_Framework_TestCase {
