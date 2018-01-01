@@ -30,8 +30,13 @@ class Calculator {
 		return $dividend;
 	}
 
-	public function subtract(){
-		return "a";
+	public function subtract($numbers){
+		$subFrom = $numbers[0];
+		unset($numbers[0]);
+		foreach ($numbers as $num){
+			$subFrom -= $num;
+		}
+		return $subFrom;
 	}
 }
 
