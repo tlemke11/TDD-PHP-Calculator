@@ -17,7 +17,12 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 		//Setup
 		$calc = new Calculator();
 
-		$this->assertEquals( $calc->add(1, 2), 3);
+		$this->assertEquals( $calc->add(array(1, 2)), 3);
 	}
 
+	public function testCanAddMultipleNumbers(){
+		$calc = new Calculator();
+
+		$this->assertEquals ( $calc->add(array(1,2,3,4)), 10);
+	}
 }

@@ -3,9 +3,12 @@
 
 class Calculator {
 
-	public function add($first, $second){
-		return $first + $second;
-}
-
+	public function add($numbers){
+		$total = 0;
+		foreach ($numbers as $num){
+			$total += $num;
+		}
+		return $total;
+	}
 }
 
