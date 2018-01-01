@@ -11,30 +11,28 @@ require_once "Calculator.php";
 
 class CalculatorTest extends PHPUnit_Framework_TestCase {
 
+	//refactored with fixtures
+    //https://phpunit.de/manual/current/en/fixtures.html
+
+	protected $calc;
+
+	protected function setUp(){
+		$this->calc = new Calculator();
+	}
+
 	public function testCanAddTwoNumbers(){
-		//Assert 1 + 2 = 3
-
-		//Setup
-		$calc = new Calculator();
-
-		$this->assertEquals( $calc->add(array(1, 2)), 3);
+		$this->assertEquals( $this->calc->add(array(1, 2)), 3);
 	}
 
 	public function testCanAddMultipleNumbers(){
-		$calc = new Calculator();
-
-		$this->assertEquals ( $calc->add(array(1,2,3,4)), 10);
+		$this->assertEquals( $this->calc->add(array(1,2,3,4)), 10);
 	}
 
 	public function testCanMultiplyTwoNumbers(){
-		$calc = new Calculator();
-
-		$this->assertEquals( $calc->multiply(array(12,12)), 144);
+		$this->assertEquals( $this->calc->multiply(array(12,12)), 144);
 	}
 
 	public function testCanMultiplyMultipleNumbers(){
-		$calc = new Calculator();
-
-		$this->assertEquals( $calc->multiply(array(12,12,12,12)), 20736);
+		$this->assertEquals( $this->calc->multiply(array(12,12,12,12)), 20736);
 	}
 }
