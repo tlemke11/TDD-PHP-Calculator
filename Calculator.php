@@ -12,7 +12,11 @@ class Calculator {
 	}
 
 	public function multiply($numbers){
-		return 144;
+		$total = 1;
+		foreach ($numbers as $num){
+			$total *= $num;
+		}
+		return $total;
 	}
 }
 
