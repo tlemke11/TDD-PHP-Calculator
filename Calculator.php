@@ -29,5 +29,9 @@ class Calculator {
 		}
 		return $dividend;
 	}
+
+	public function subtract(){
+		return "a";
+	}
 }
 
