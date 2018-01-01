@@ -10,5 +10,9 @@ class Calculator {
 		}
 		return $total;
 	}
+
+	public function multiply($numbers){
+		return "a";
+	}
 }
 
