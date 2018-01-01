@@ -31,4 +31,10 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 
 		$this->assertEquals( $calc->multiply(array(12,12)), 144);
 	}
+
+	public function testCanMultiplyMultipleNumbers(){
+		$calc = new Calculator();
+
+		$this->assertEquals( $calc->multiply(array(12,12,12,12)), 20736);
+	}
 }
