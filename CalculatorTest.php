@@ -35,4 +35,8 @@ class CalculatorTest extends PHPUnit_Framework_TestCase {
 	public function testCanMultiplyMultipleNumbers(){
 		$this->assertEquals( $this->calc->multiply(array(12,12,12,12)), 20736);
 	}
+
+	public function testCanDivideTwoNumbers(){
+		$this->assertEquals( $this->calc->divide(array(16,4)), 4);
+	}
 }

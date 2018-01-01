@@ -18,5 +18,9 @@ class Calculator {
 		}
 		return $total;
 	}
+
+	public function divide($numbers){
+
+	}
 }
 
