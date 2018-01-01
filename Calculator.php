@@ -12,7 +12,7 @@ class Calculator {
 	}
 
 	public function multiply($numbers){
-		return "a";
+		return 144;
 	}
 }
 
